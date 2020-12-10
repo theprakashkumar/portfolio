@@ -25,6 +25,7 @@ body {
     max-width: 1050px;
     margin-left: auto;
     margin-right: auto;
+    background: pink;
 }
 
 .nav-link-container ul{
@@ -50,13 +51,23 @@ body {
     color: var(--text-color);
 }
 
+.nav-link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: var(--text-color);
+    font-size: 19px;
+    cursor: pointer;
+}
+
+
 @media only screen and (max-width: 600px) {
 
     .navigation .nav-brand{
         font-size: 1.5rem;
     }
 
-    .navigation .link {
+    .navigation .nav-link {
         font-size: 1rem;
     }
 
@@ -68,11 +79,11 @@ body {
         font-size: 1.3rem;
       }
 
-    .navigation .link {
+    .navigation .nav-link {
         font-size: 0.85rem;
     }
 
-    .navigation .link {
+    .navigation .nav-link {
         padding: 3px 6px;
     }
 }
