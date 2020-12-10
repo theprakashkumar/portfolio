@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+/*  linear-gradient(90deg, rgba(51,51,145,1) 0%, rgba(124,48,255,1) 100%); */
+
 :root {
-    --primary-color: #7C3AED;
+    --primary-color: #7c01ff;
+    --primary-color-compliment: #b7abfe; 
     /* --dark-grey: #6B7280;
     --off-white: #F3F4F6; */
     --main-background: #f5f5f5;
+    --secondary-background: #fcfcfc;
     --text-color: #808080;
 }
 
@@ -26,7 +30,7 @@ body {
 }
 
 .nav-link-container ul{
-    width: 250px;
+    max-width: 250px;
     display: flex;
     justify-content: space-between;
 }
@@ -43,6 +47,34 @@ body {
     font-size: 1.2rem;
     color: var(--text-color);
 }
+
+@media only screen and (max-width: 600px) {
+
+    .navigation .nav-brand{
+        font-size: 1.5rem;
+    }
+
+    .navigation .link {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .navigation .nav-brand{
+        font-size: 1.3rem;
+      }
+
+    .navigation .link {
+        font-size: 0.85rem;
+    }
+
+    .navigation .link {
+        padding: 3px 6px;
+    }
+}
+
 
 /* active link should have the main color from gradient */
 .navigation .link-active {
@@ -61,26 +93,153 @@ body {
 }
 
 /* Header */
+
+/* Header Image */
 .hero{
     padding: 2rem;
 }
 
 .hero .hero-img{
-    max-width: 350px;
+    max-width: 330px;
     display: block;
     margin: auto;
 }
 
-
+/* Header Heading */
 .hero .hero-heading{
     padding-top: 1rem;
     text-align: center;
     color: var(--dark-grey);
     font-weight: 400;
     color: var(--text-color);
-
 }
 
 .hero .hero-heading .hero-name{
     color: var(--primary-color);
 }
+
+@media only screen and (max-width: 650px) {
+    .hero .hero-heading{
+        font-size: 2rem;
+        padding: 0;
+    }
+} 
+
+
+/* Technologies Section */
+
+.section {
+    padding: 2rem;
+}
+/* to center required heading */
+.heading-center{
+    text-align: center;
+}
+
+.ow {
+    background-color: var(--secondary-background);
+}
+
+.technologies-icon-container{
+    margin: 0 auto;
+    display: flex;
+    grid-template-columns: repeat(9, minmax(35px, 100px));
+    /* grid-template-rows: repeat(3, auto); */
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+/* Link */
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white;
+    display: block;
+    max-width: 160px;
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+    display: block;
+    max-width: 140px;
+    margin: 1rem 1rem 1rem 0rem;
+}
+/* End of Link */
+
+/* project section */
+
+.project-heading-container, .blogs-heading-container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+
+.project-button, .blogs-button{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 175px;
+}
+
+/* footer */
+.footer {
+    background: rgb(183,171,254);
+    background: linear-gradient(90deg, rgba(183,171,254,1) 0%, rgba(124,1,255,1) 100%);
+    padding: 2rem;
+    text-align: center;
+    color: #0a0113;
+}
+
+.footer .link {
+    color:  #0a0113;
+}
+/* 
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+} */
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* to dos
+change the color of anchor tag to color primary and also put the underline to them
+
+*/
+
+
+
+
+/* 
+Gradient effect in text
+.text{
+    background-image: linear-gradient(to right, first-color, second-color);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+*/
