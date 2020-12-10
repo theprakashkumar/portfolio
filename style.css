@@ -25,7 +25,6 @@ body {
     max-width: 1050px;
     margin-left: auto;
     margin-right: auto;
-    background: pink;
 }
 
 .nav-link-container ul{
@@ -113,7 +112,7 @@ body {
 }
 
 .hero .hero-img{
-    max-width: 330px;
+    max-width: 310px;
     display: block;
     margin: auto;
 }
