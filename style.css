@@ -5,8 +5,6 @@
 :root {
     --primary-color: #7c01ff;
     --primary-color-compliment: #b7abfe; 
-    /* --dark-grey: #6B7280;
-    --off-white: #F3F4F6; */
     --main-background: #f5f5f5;
     --secondary-background: #fcfcfc;
     --text-color: #808080;
@@ -40,7 +38,11 @@ body {
     font-size: 2rem;
     margin-top: auto;
     margin-bottom: auto;
-    color: var(--text-color);
+    /* to give gradient effect to nav bran */
+    background-image: linear-gradient(to right, var(--primary-color-compliment), var(--primary-color));
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .navigation .link {
@@ -129,8 +131,17 @@ body {
 /* Technologies Section */
 
 .section {
-    padding: 2rem;
+    padding: 3rem;
 }
+
+.heading-first{
+    font-size: 1.6rem;
+}
+
+.heading-second{
+    margin-bottom: 1.3rem;
+}
+
 /* to center required heading */
 .heading-center{
     text-align: center;
@@ -142,37 +153,37 @@ body {
 
 .technologies-icon-container{
     margin: 0 auto;
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(9, minmax(35px, 100px));
     /* grid-template-rows: repeat(3, auto); */
     grid-gap: 20px;
     justify-content: center;
 }
 
-/* Link */
-.link {
-    box-sizing: border-box;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+.technologies-icon:hover{
+    transform: scale(1.1);
 }
 
-.link-primary {
-    background-color: var(--primary-color);
-    border-radius: 0.5rem;
-    color: white;
-    display: block;
-    max-width: 160px;
-    margin: 1rem 1rem 1rem 0rem;
+.technologies-icon:hover{
+    transition: all 0.5s;
 }
 
-.link-secondary {
+
+@media only screen and (max-width: 700px) {
+    .technologies-icon-container{
+        grid-template-columns: repeat(3, minmax(35px, 100px));
+        grid-template-rows: repeat(3, auto);
+    }
+} 
+
+/* .link-secondary {
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
     display: block;
     max-width: 140px;
     margin: 1rem 1rem 1rem 0rem;
-}
+} */
 /* End of Link */
 
 /* project section */
@@ -183,11 +194,36 @@ body {
     max-width: 900px;
 }
 
-.project-button, .blogs-button{
+.heading-second a{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.project-button-container, .blogs-button{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 175px;
+    max-width: 200px;
+}
+
+/* Link */
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: var(--primary-color) 2px solid;
+    color: var(--primary-color);
+    font-size: 19px;
+    display: block;
+    margin: 1rem 1rem 1rem 0rem;
+    cursor: pointer;
+    transition-property: background, color; 
+    transition-duration: 0.5s; 
+}
+
+.link:hover{
+    background: var(--primary-color);
+    color: white;
 }
 
 /* footer */
@@ -199,47 +235,26 @@ body {
     color: #0a0113;
 }
 
-.footer .link {
-    color:  #0a0113;
+.social-links {
+    display: flex;
+    justify-content: center;
 }
-/* 
-.footer .footer-header {
-    font-weight: bold;
-    font-size: large;
-} */
+
+.footer-social-link {
+    color:  #0a0113;
+    padding: 0.7rem;
+    font-size: 25px;
+    transition: color 0.5s;
+}
+
+.footer-social-link:hover{
+    color: white;
+}
+
+.footer-copyright{
+    margin-bottom: 0;;
+}
 
 .footer ul {
     padding-inline-start: 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* to dos
-change the color of anchor tag to color primary and also put the underline to them
-
-*/
-
-
-
-
-/* 
-Gradient effect in text
-.text{
-    background-image: linear-gradient(to right, first-color, second-color);
-    display: inline-block;
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-*/
