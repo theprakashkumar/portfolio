@@ -1,0 +1,39 @@
+
+:root{
+    --primary-color: #7c01ff;
+    --secondary-color: #b7abfe;
+}
+.heading-second{
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.heading-second-br{
+    display: block;
+    margin: 15px;
+}
+
+.heading-second-link{
+    color: var(--primary-color);
+}
+
+
+.blog-image-container{
+    margin-top: 20px;
+    padding: 30px;
+    background: #26B868;
+}
+
+.blog-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    height: 45%;
+    border: 10px solid white;
+    border-radius: 15%;
+}
+
+.heading-second::selection{
+    background: var(--secondary-color);
+}

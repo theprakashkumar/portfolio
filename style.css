@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 :root {
     --primary-color: #7c01ff;
     --primary-color-compliment: #b7abfe;
@@ -41,6 +43,7 @@ body {
     display: inline-block;
     -webkit-background-clip: text;
     color: transparent;
+    font-family: 'Pacifico', 'sans-serif';;
 }
 
 .navigation .link {
@@ -129,10 +132,10 @@ body {
 }
 
 .wave {
-    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s;        /* Change to speed up or slow down */
-    animation-iteration-count: infinite;  /* Never stop waving :) */
-    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    animation-name: wave-animation;
+    animation-duration: 2.5s;      
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;      
     display: inline-block;
   }
   
