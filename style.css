@@ -43,7 +43,7 @@ body {
     display: inline-block;
     -webkit-background-clip: text;
     color: transparent;
-    font-family: 'Pacifico', 'sans-serif';;
+    font-family: 'Pacifico', 'sans-serif';
 }
 
 .navigation .link {
