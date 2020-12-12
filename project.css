@@ -214,3 +214,10 @@ body {
 .footer ul {
     padding-inline-start: 0px;
 }
+
+/* blog */
+
+.heading-second-blog{
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
