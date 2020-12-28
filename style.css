@@ -40,7 +40,6 @@ body {
     margin-bottom: auto;
     /* to give gradient effect to nav bran */
     background-image: linear-gradient(to right, var(--primary-color-compliment), var(--primary-color));
-    display: inline-block;
     -webkit-background-clip: text;
     color: transparent;
     font-family: 'Pacifico', 'sans-serif';
@@ -59,7 +58,6 @@ body {
     font-size: 19px;
     cursor: pointer;
 }
-
 
 @media only screen and (max-width: 600px) {
 
@@ -186,7 +184,6 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(9, minmax(35px, 100px));
-    /* grid-template-rows: repeat(3, auto); */
     grid-gap: 20px;
     justify-content: center;
 }
@@ -198,7 +195,6 @@ body {
 .technologies-icon:hover {
     transition: all 0.5s;
 }
-
 
 @media only screen and (max-width: 700px) {
     .technologies-icon-container {
